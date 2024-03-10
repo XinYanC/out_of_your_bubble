@@ -108,3 +108,52 @@ body {
     border-radius: 5px;
     transition: transform 0.2s ease; /* Add a transition for the shaking effect */
 }
+
+#saBubble {
+    position: absolute;
+    top: 44%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: bubbleMotion1 10s infinite alternate; 
+    /* animation: rotateAnimation 10s infinite alternate; */
+}
+
+#saBubble img {
+    width: 30%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+@keyframes bubbleMotion1 {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(-5px) translateY(-5px); /* Initial and final position */
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(10deg) translateX(5px) translateY(5px); /* Middle position with rotation */
+    }
+}
+
+#fillerbubble1 {
+    position: absolute;
+    top: 53%;
+    left: 48%;
+    /* transform: translate(-50%, -50%); */
+    animation: secondBubbleMotion 10s infinite alternate;
+    z-index: 3;
+}
+
+#fillerbubble1 img{
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@keyframes secondBubbleMotion {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(3deg) translateX(10px) translateY(10px);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-3deg) translateX(-10px) translateY(-10px);
+    }
+}

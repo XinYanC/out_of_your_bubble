@@ -74,3 +74,30 @@ function backSound(){
     }, 800);
 }
 
+function playGifAndRedirect() {
+    // Play the click sound
+    var bubbleClickSound = document.getElementById('bubbleClickSound');
+    if (bubbleClickSound) {
+        bubbleClickSound.play();
+    } else {
+        console.error('Error: bubbleClickSound not found.');
+    }
+
+    // Get the moving bubble element
+    var saBubble = document.getElementById('saBubble');
+
+    // Play the GIF after 2 seconds
+    setTimeout(function () {
+        saBubble.innerHTML = '<img src="./images/pop.gif" alt="GIF" style="opacity: 0.95;">';
+    }, 700);
+
+    // Redirect to the "bubbles.html" page after 4 seconds
+    setTimeout(function () {
+        if (saBubble){
+            window.location.href = 'studyabroad.html';
+        }
+        
+    }, 1000);
+}
+
+
