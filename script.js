@@ -61,3 +61,16 @@ function showNextOverlay() {
     }, 800);
 }
 
+function backSound(){
+    var backClickSound = document.getElementById('backClickSound');
+    if (backClickSound) {
+        backClickSound.play();
+    } else {
+        console.error('Error: backClickSound not found.');
+    }
+
+    setTimeout(function () {
+        window.location.href = 'bubbles.html';
+    }, 800);
+}
+

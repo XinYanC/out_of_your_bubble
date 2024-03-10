@@ -93,3 +93,18 @@ body {
     }
 }
 
+#backButton {
+    position: fixed;
+    bottom: -2%;
+    right: -57%;
+    cursor: pointer;
+    z-index: 2;
+    animation: shakeAnimation 2s infinite;
+}
+
+#backButton img {
+    width: 20%; /* Adjust the size of the button as needed */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s ease; /* Add a transition for the shaking effect */
+}
