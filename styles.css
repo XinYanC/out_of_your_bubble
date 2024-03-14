@@ -109,18 +109,23 @@ body {
     transition: transform 0.2s ease; /* Add a transition for the shaking effect */
 }
 
-#saBubble {
+/* #saBubble {
     position: absolute;
     top: 44%;
     left: 38%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     animation: bubbleMotion1 10s infinite alternate; 
-    /* animation: rotateAnimation 10s infinite alternate; */
-}
+} */
 
 #saBubble img {
-    width: 30%; /* Adjust the size of the bubble icon as needed */
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: bubbleMotion1 10s infinite alternate; 
+    width: 19%; /* Adjust the size of the bubble icon as needed */
     height: auto;
     border-radius: 50%;
 }
@@ -134,19 +139,88 @@ body {
     }
 }
 
-#fillerbubble1 {
+@keyframes bubbleMotion2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(-5deg); /* Rotate slightly */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(5deg); /* Rotate back */
+    }
+}
+
+/* #internBubble {
+    position: absolute;
+    top: 72%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: bubbleMotion2 5s infinite alternate; 
+} */
+
+#internBubble img {
+    width: 20%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: bubbleMotion2 5s infinite alternate; 
+}
+
+#fearBubble img {
+    width: 17%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: secondBubbleMotion 5s infinite alternate; 
+}
+
+/* #fillerbubble1 {
     position: absolute;
     top: 53%;
     left: 48%;
+    animation: secondBubbleMotion 10s infinite alternate;
+    z-index: 3;
+} */
+
+#fillerbubble1 img{
+    width: 5%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 53%;
+    left: 27%;
     /* transform: translate(-50%, -50%); */
     animation: secondBubbleMotion 10s infinite alternate;
     z-index: 3;
 }
 
-#fillerbubble1 img{
-    width: 10%;
+#fillerbubble2 img{
+    width: 9%;
     height: auto;
     border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    animation: bubbleMotion2 10s infinite alternate;
+    z-index: 3;
+}
+
+#fillerbubble3 img{
+    width: 4%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 83%;
+    left: 30%;
+    animation: shakeAnimation 10s infinite alternate;
+    z-index: 3;
 }
 
 @keyframes secondBubbleMotion {
@@ -156,4 +230,247 @@ body {
     50% {
         transform: translate(-50%, -50%) rotate(-3deg) translateX(-10px) translateY(-10px);
     }
+}
+
+/* .next {
+    position: absolute;
+    top: 53%;
+    right: 0%;
+    z-index: 3;
+} */
+
+.next img {
+    position: absolute;
+    top: 43%;
+    right: -5%;
+    z-index: 3;
+    width: 10%;
+    height: auto;
+    animation: next 1.5s infinite alternate;
+}
+
+@keyframes next {
+    0%, 100% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-5px); /* Adjust the shaking distance as needed */
+    }
+}
+
+.prev img {
+    position: absolute;
+    top: 43%;
+    left: -5%;
+    z-index: 3;
+    width: 10%;
+    height: auto;
+    animation: prev 1.5s infinite alternate;
+}
+
+@keyframes prev {
+    0%, 100% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px); /* Adjust the shaking distance as needed */
+    }
+}
+
+#techVid video{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+#safillerbubble1 img {
+    position: absolute;
+    top: 17%;
+    left: 29%;
+    z-index: 3;
+    width: 15%;
+    height: auto;
+}
+
+#safillerbubble2 img {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: 3;
+    width: 5%;
+    height: auto;
+}
+
+#safillerbubble3 img {
+    position: absolute;
+    top: 65%;
+    left: 13%;
+    z-index: 3;
+    width: 7%;
+    height: auto;
+}
+
+#safillerbubble4 img {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    z-index: 3;
+    width: 3%;
+    height: auto;
+}
+
+#bubblegun img{
+    position: absolute;
+    bottom: -2%;
+    right: 0%;
+    z-index: 3;
+    width: 20%;
+    height: auto;
+    rotate: -10deg;
+}
+
+#bubblegun img:hover{
+    position: absolute;
+    bottom: -1%;
+    right: 0%;
+    z-index: 3;
+    width: 20%;
+    height: auto;
+    rotate: 1deg;
+}
+
+#bubblesimg img {
+    position: absolute;
+    top: 58%;
+    left: 76%;
+    z-index: 3;
+    width: 35%;
+    height: auto;
+    z-index: 1;
+    animation: bubbleMotion2 5s infinite alternate; 
+}
+
+
+#linkedinBubble img {
+    width: 20%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: bubbleMotion2 5s infinite alternate; 
+}
+
+#githubBubble img{
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 53%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+    animation: secondBubbleMotion 10s infinite alternate;
+    z-index: 3;
+}
+
+#portfolioBubble img {
+    width: 17%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: secondBubbleMotion 5s infinite alternate; 
+    z-index: 10;
+}
+
+#cfillerbubble1 img{
+    width: 11%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    animation: shakeAnimation 10s infinite alternate;
+    z-index: 3;
+}
+
+#cfillerbubble2 img {
+    width: 7%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: secondBubbleMotion 5s infinite alternate; 
+}
+
+#cfillerbubble3 img {
+    width: 13%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 72%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    animation: bubbleMotion2 5s infinite alternate; 
+}
+
+#cfillerbubble4 img{
+    width: 5%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 34%;
+    left: 87%;
+    /* transform: translate(-50%, -50%); */
+    animation: secondBubbleMotion 10s infinite alternate;
+    z-index: 3;
+}
+
+#cfillerbubble5 img{
+    width: 8%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 63%;
+    animation: bubbleMotion2 10s infinite alternate;
+    z-index: 3;
+}
+
+#cfillerbubble6 img{
+    width: 5%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    /* transform: translate(-50%, -50%); */
+    animation: bubbleMotion2 10s infinite alternate;
+    z-index: 3;
+}
+
+#againButton img{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: -23%;
+    right: 0%;
+}
+
+#againButton img:hover{
+    width: 21%;
+    height: auto;
+    position: absolute;
+    top: -25%;
+    right: 0%;
 }

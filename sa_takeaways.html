@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Studying Abroad Takeaways</title>
+</head>
+<body>
+    <div id="fullImage">
+        <img src="#" alt="Full Image">
+    </div>
+
+    <div id="techVid">
+        <!-- <video width="300" height="300" name="Order Video"  autoplay muted loop> -->
+        <video width="300" height="300" name="Order Video"  autoplay muted >
+            <source src="./images/tech.mov">
+        </video>
+    </div>
+    <div id="safillerbubble1">
+        <img src="./images/fillerbubble1.png" alt="Bubble Icon">
+    </div>
+    <div id="safillerbubble2">
+        <img src="./images/fillerbubble1.png" alt="Bubble Icon">
+    </div>
+    <div id="safillerbubble3">
+        <img src="./images/fillerbubble1.png" alt="Bubble Icon">
+    </div>
+    <div id="safillerbubble4">
+        <img src="./images/fillerbubble1.png" alt="Bubble Icon">
+    </div>
+
+    <!-- Image button at the bottom right -->
+    <div id="backButton" onclick="backSound()">
+        <!-- <a href="bubbles.html"> -->
+            <img src="./images/wand.png" alt="Small Button">
+        <!-- </a> -->
+    </div>
+
+    <div class="prev" onclick="flip()">
+        <a href="javascript:delay('studyabroad.html')">
+            <img src="./images/back.png" alt="Back Button">
+        </a>
+    </div>
+
+    <audio id="backClickSound" src="./sounds/next-bubble.mp3"></audio>
+    <audio id="flipSound" src="./sounds/page-flip.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

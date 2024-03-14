@@ -32,9 +32,9 @@ function playGifAndHide() {
 }
 
 // Add an event listener to remove the transition class after the transition ends
-document.getElementById('overlayImage').addEventListener('transitionend', function() {
-    this.classList.remove('touching');
-});
+// document.getElementById('overlayImage').addEventListener('transitionend', function() {
+//     this.classList.remove('touching');
+// });
 
 // Function to show the next overlay
 function showNextOverlay() {
@@ -75,29 +75,95 @@ function backSound(){
 }
 
 function playGifAndRedirect() {
-    // Play the click sound
     var bubbleClickSound = document.getElementById('bubbleClickSound');
-    if (bubbleClickSound) {
-        bubbleClickSound.play();
-    } else {
-        console.error('Error: bubbleClickSound not found.');
-    }
-
-    // Get the moving bubble element
     var saBubble = document.getElementById('saBubble');
+    var internBubble = document.getElementById('internBubble');
+    var fearBubble = document.getElementById('fearBubble');
 
-    // Play the GIF after 2 seconds
-    setTimeout(function () {
-        saBubble.innerHTML = '<img src="./images/pop.gif" alt="GIF" style="opacity: 0.95;">';
-    }, 700);
+    saBubble.addEventListener('click', function() {
+        console.log("clicked");
+        bubbleClickSound.play();
 
-    // Redirect to the "bubbles.html" page after 4 seconds
-    setTimeout(function () {
-        if (saBubble){
+        setTimeout(function () {
+            saBubble.innerHTML = '<img src="./images/pop.gif" alt="GIF" style="opacity: 0.95;">';
+        },700);
+        setTimeout(function () {
             window.location.href = 'studyabroad.html';
-        }
-        
-    }, 1000);
+        }, 1400);
+    });
+
+    internBubble.addEventListener('click', function() {
+        console.log("clicked");
+        bubbleClickSound.play();
+        setTimeout(function () {
+            internBubble.innerHTML = '<img src="./images/pop.gif" alt="GIF" style="opacity: 0.95;">';
+        },700);
+        setTimeout(function () {
+            window.location.href = 'internship.html';
+        }, 1000);
+    });
+
+    fearBubble.addEventListener('click', function() {
+        console.log("clicked");
+        bubbleClickSound.play();
+        setTimeout(function () {
+            fearBubble.innerHTML = '<img src="./images/pop.gif" alt="GIF" style="opacity: 0.95;">';
+        },700);
+        setTimeout(function () {
+            window.location.href = 'fears.html';
+        }, 1000);
+    });
 }
 
+function flip() {
+    var flipSound = document.getElementById('flipSound');
 
+    if (flipSound) {
+        flipSound.play();
+    } else {
+        console.error('Error: flipSound not found.');
+    }
+
+    setTimeout(function () {
+    }, 650);
+}
+
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 650 );
+}
+
+function viewAgain() {
+    var againSound = document.getElementById('againSound');
+
+    if (againSound) {
+        againSound.play();
+    } else {
+        console.error('Error: flipSound not found.');
+    }
+
+    setTimeout(function () {
+        window.location.href = 'index.html';
+    }, 800);
+}
+
+function bubbles(){
+    var moreBubblesSound = document.getElementById('moreBubblesSound');
+    var bubblesimg = document.getElementById('bubblesimg');
+
+    if (moreBubblesSound) {
+        moreBubblesSound.play();
+    } else {
+        console.error('Error: moreBubblesSound not found.');
+    }
+
+    setTimeout(function () {
+        bubblesimg.innerHTML = '<img src="./images/bubtrans2.png">';
+    }, 200);
+    setTimeout(function () {
+        bubblesimg.innerHTML = '<img src="./images/bubtrans3.png">';
+    }, 400);
+
+    setTimeout(function () {
+        window.location.href = 'connect.html';
+    }, 1000);
+}
