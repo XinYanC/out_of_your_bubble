@@ -329,6 +329,7 @@ body {
     width: 20%;
     height: auto;
     rotate: -10deg;
+    animation: shakeAnimation 2s infinite;
 }
 
 #bubblegun img:hover{
@@ -346,7 +347,7 @@ body {
     top: 58%;
     left: 76%;
     z-index: 3;
-    width: 35%;
+    width: 30%;
     height: auto;
     z-index: 1;
     animation: bubbleMotion2 5s infinite alternate; 
@@ -473,4 +474,13 @@ body {
     position: absolute;
     top: -25%;
     right: 0%;
+}
+
+#wandstick img {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 58%;
+    animation: shakeAnimation 3s infinite alternate;
 }

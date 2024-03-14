@@ -164,6 +164,7 @@ function bubbles(){
     }, 400);
 
     setTimeout(function () {
-        window.location.href = 'connect.html';
+        window.location.href = 'why.html';
     }, 1000);
 }
+
