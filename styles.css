@@ -52,14 +52,16 @@ body {
 
 #overlayImage2 {
     position: absolute;
-    top: -17%;
-    left: -3%;
+    /* top: -17%; */
+    top: -10%;
+    /* left: -3%; */
+    left: -4%;
     /* transform: translate(-50%, -50%); */
     z-index: 2; /* Adjust the z-index to control the layering */
 }
 
 #overlayImage2 img {
-    width: 76%; 
+    width: 72%; 
     height: auto;
     /* border-radius: 20px; */
 }
