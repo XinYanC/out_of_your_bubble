@@ -120,6 +120,18 @@ body {
 
 #saBubble img {
     position: absolute;
+    top: 25%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: bubbleMotion2 10s infinite alternate; 
+    width: 15%; /* Adjust the size of the bubble icon as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+#internBubble img {
+    position: absolute;
     top: 40%;
     left: 18%;
     transform: translate(-50%, -50%);
@@ -157,7 +169,7 @@ body {
     animation: bubbleMotion2 5s infinite alternate; 
 } */
 
-#internBubble img {
+#plansBubble img {
     width: 20%; /* Adjust the size of the bubble icon as needed */
     height: auto;
     border-radius: 50%;
@@ -220,6 +232,39 @@ body {
     top: 83%;
     left: 30%;
     animation: shakeAnimation 10s infinite alternate;
+    z-index: 3;
+}
+
+#fillerbubble4 img{
+    width: 4%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 34%;
+    left: 81%;
+    animation: shakeAnimation 10s infinite alternate;
+    z-index: 3;
+}
+
+#fillerbubble5 img{
+    width: 7%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    animation: bubbleMotion2 10s infinite alternate;
+    z-index: 3;
+}
+
+#fillerbubble6 img{
+    width: 9%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    animation: bubbleMotion2 10s infinite alternate;
     z-index: 3;
 }
 

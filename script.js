@@ -79,6 +79,7 @@ function playGifAndRedirect() {
     var saBubble = document.getElementById('saBubble');
     var internBubble = document.getElementById('internBubble');
     var fearBubble = document.getElementById('fearBubble');
+    var plansBubble = document.getElementById('plansBubble');
 
     saBubble.addEventListener('click', function() {
         console.log("clicked");
@@ -111,6 +112,17 @@ function playGifAndRedirect() {
         },700);
         setTimeout(function () {
             window.location.href = 'fears.html';
+        }, 1000);
+    });
+
+    plansBubble.addEventListener('click', function() {
+        console.log("clicked");
+        bubbleClickSound.play();
+        setTimeout(function () {
+            plansBubble.innerHTML = '<img src="./images/pop.gif" alt="GIF" style="opacity: 0.95;">';
+        },700);
+        setTimeout(function () {
+            window.location.href = 'plans.html';
         }, 1000);
     });
 }
